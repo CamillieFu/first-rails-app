@@ -1,0 +1,12 @@
+
+<%= @answer %>
+<p><em>-You</em></p>
+
+<% if @answer.include?("?") %>
+<p>'Silly question, bitch!</p>
+<% else %>
+<p>'I don't care, plebe!</p>
+<% end %>
+<p><em>-Coach</em></p>
+<%= link_to 'Back', ask_path %>
+<%# <p>Silly question, bitch!</p> %>
